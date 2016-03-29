@@ -10,7 +10,8 @@
     "gdbots/pbjx": "dev-2chains as dev-master",
     "gdbots/pbjx-bundle": "dev-master",
     "gdbots/schemas": "dev-master",
-    "symfony/symfony": "~3.0"
+    "symfony/symfony": "~3.0",
+    "ua-parser/uap-php": "~3.4"
   },
   "require-dev": {
     "composer/composer": "1.0.*@dev",

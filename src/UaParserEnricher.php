@@ -41,7 +41,7 @@ class UaParserEnricher implements EventSubscriber
         try {
             $result = $this->parser->parse($message->get('ctx_ua'));
         } catch (\Exception $e) {
-            $this->logger->warning('Message [{pbj_schema}] could not be parsed.', [
+            $this->logger->warning('User agent could not be parsed from message [{pbj_schema}].', [
                 'exception' => $e,
                 'pbj_schema' => $message::schema()->getId()->toString(),
                 'pbj' => $message->toArray(),
@@ -65,7 +65,7 @@ class UaParserEnricher implements EventSubscriber
             $message->set('ctx_ua_parsed', $userAgent);
         } catch (\Exception $e) {
             $this->logger->warning(
-                sprintf('Parsed user agent "%s" could not be handled.', $result->toString()),
+                sprintf('Parsed user agent [%s] could not be added to message.', $result->toString()),
                 ['exception' => $e, 'pbj' => $message->toArray()]
             );
         }

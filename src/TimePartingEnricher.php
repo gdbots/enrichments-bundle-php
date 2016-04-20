@@ -7,7 +7,7 @@ use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Pbjx\EventSubscriber;
 use Gdbots\Schemas\Common\Enum\DayOfWeek;
 use Gdbots\Schemas\Common\Enum\Month;
-use Gdbots\Schemas\Enrichments\TimeParting\TimeParting;
+use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimeParting;
 
 class TimePartingEnricher implements EventSubscriber
 {

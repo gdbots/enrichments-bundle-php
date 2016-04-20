@@ -5,7 +5,7 @@ namespace Gdbots\Bundle\EnrichmentsBundle;
 use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Pbjx\EventSubscriber;
 use Gdbots\Schemas\Contexts\UserAgentV1;
-use Gdbots\Schemas\Enrichments\UaParser\UaParser;
+use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParser;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UAParser\Parser;

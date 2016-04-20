@@ -5,7 +5,7 @@ namespace Gdbots\Bundle\EnrichmentsBundle;
 use Gdbots\Common\Microtime;
 use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Pbjx\EventSubscriber;
-use Gdbots\Schemas\Enrichments\TimeSampling\TimeSampling;
+use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSampling;
 
 class TimeSamplingEnricher implements EventSubscriber
 {

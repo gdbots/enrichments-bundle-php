@@ -28,12 +28,12 @@ class UaParserEnricher implements EventSubscriber
     }
 
     /**
-     * @param PbjxEvent $event
+     * @param PbjxEvent $pbjxEvent
      */
-    public function enrich(PbjxEvent $event)
+    public function enrich(PbjxEvent $pbjxEvent)
     {
         /** @var UaParser $message */
-        $message = $event->getMessage();
+        $message = $pbjxEvent->getMessage();
         if (!$message->has('ctx_ua')) {
             return;
         }
@@ -77,7 +77,7 @@ class UaParserEnricher implements EventSubscriber
     public static function getSubscribedEvents()
     {
         return [
-            'gdbots:enrichments:mixin:ua-parser.enrich' => 'enrich',
+            'gdbots:enrichments:mixin:ua-parser.enrich' => [['enrich', 5000]],
         ];
     }
 }

@@ -12,12 +12,12 @@ use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimeParting;
 class TimePartingEnricher implements EventSubscriber
 {
     /**
-     * @param PbjxEvent $event
+     * @param PbjxEvent $pbjxEvent
      */
-    public function enrich(PbjxEvent $event)
+    public function enrich(PbjxEvent $pbjxEvent)
     {
         /** @var TimeParting $message */
-        $message = $event->getMessage();
+        $message = $pbjxEvent->getMessage();
         $date = $message->get('occurred_at');
 
         if ($date instanceof Microtime) {
@@ -50,7 +50,7 @@ class TimePartingEnricher implements EventSubscriber
     public static function getSubscribedEvents()
     {
         return [
-            'gdbots:enrichments:mixin:time-parting.enrich' => 'enrich',
+            'gdbots:enrichments:mixin:time-parting.enrich' => [['enrich', 5000]],
         ];
     }
 }

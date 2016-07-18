@@ -8,6 +8,7 @@
     "php": ">=5.6",
     "gdbots/pbjx": "dev-es as 1.0.0",
     "gdbots/pbjx-bundle": "dev-master",
+    "gdbots/schemas": "dev-es as 1.0.0",
     "symfony/symfony": "~3.0",
     "ua-parser/uap-php": "~3.4"
   },

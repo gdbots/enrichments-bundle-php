@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "require": {
     "php": ">=5.6",
-    "gdbots/pbjx": "~1.0",
+    "gdbots/pbjx": "dev-es as 1.0.0",
     "gdbots/pbjx-bundle": "dev-master",
     "symfony/symfony": "~3.0",
     "ua-parser/uap-php": "~3.4"

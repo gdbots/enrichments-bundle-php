@@ -3,7 +3,7 @@
 namespace Gdbots\Tests\Bundle\EnrichmentsBundle;
 
 use Gdbots\Bundle\EnrichmentsBundle\TimePartingEnricher;
-use Gdbots\Common\Microtime;
+use Gdbots\Pbj\WellKnown\Microtime;
 use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Schemas\Common\Enum\DayOfWeek;
 use Gdbots\Schemas\Common\Enum\Month;

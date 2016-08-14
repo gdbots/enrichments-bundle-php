@@ -6,10 +6,11 @@
   "license": "Apache-2.0",
   "require": {
     "php": ">=5.6",
+    "gdbots/pbj": "dev-wellknown",
     "gdbots/pbjx": "dev-es as 1.0.0",
     "gdbots/pbjx-bundle": "dev-master",
     "gdbots/schemas": "dev-es as 1.0.0",
-    "symfony/symfony": "~3.0",
+    "symfony/symfony": "~3.1",
     "ua-parser/uap-php": "~3.4"
   },
   "require-dev": {

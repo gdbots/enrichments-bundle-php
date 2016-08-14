@@ -3,7 +3,7 @@
 namespace Gdbots\Tests\Bundle\EnrichmentsBundle;
 
 use Gdbots\Bundle\EnrichmentsBundle\TimeSamplingEnricher;
-use Gdbots\Common\Microtime;
+use Gdbots\Pbj\WellKnown\Microtime;
 use Gdbots\Pbjx\Event\PbjxEvent;
 
 class TimeSamplingEnricherTest extends \PHPUnit_Framework_TestCase

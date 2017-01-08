@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Gdbots\Bundle\EnrichmentsBundle;
 
@@ -14,7 +15,7 @@ class TimePartingEnricher implements EventSubscriber
     /**
      * @param PbjxEvent $pbjxEvent
      */
-    public function enrich(PbjxEvent $pbjxEvent)
+    public function enrich(PbjxEvent $pbjxEvent): void
     {
         /** @var TimeParting $message */
         $message = $pbjxEvent->getMessage();
@@ -40,8 +41,7 @@ class TimePartingEnricher implements EventSubscriber
                 || $dayOfWeek === DayOfWeek::SATURDAY
                 || $dayOfWeek === DayOfWeek::SUNDAY_TOO
             )
-            ->set('hour_of_day', (int)$date->format('G'))
-        ;
+            ->set('hour_of_day', (int)$date->format('G'));
     }
 
     /**

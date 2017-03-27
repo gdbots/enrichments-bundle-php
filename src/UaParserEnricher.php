@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Gdbots\Bundle\EnrichmentsBundle;
 
@@ -11,13 +11,13 @@ use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UAParser\Parser;
 
-class UaParserEnricher implements EventSubscriber
+final class UaParserEnricher implements EventSubscriber
 {
     /** @var LoggerInterface $logger */
-    protected $logger;
+    private $logger;
 
     /** @var Parser $parser */
-    protected $parser;
+    private $parser;
 
     /**
      * @param LoggerInterface $logger

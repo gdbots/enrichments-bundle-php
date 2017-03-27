@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Gdbots\Bundle\EnrichmentsBundle\DependencyInjection;
 
@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class GdbotsEnrichmentsExtension extends Extension
+final class GdbotsEnrichmentsExtension extends Extension
 {
     /**
      * @param array            $config

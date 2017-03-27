@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Gdbots\Bundle\EnrichmentsBundle;
 
@@ -10,7 +10,7 @@ use Gdbots\Schemas\Common\Enum\DayOfWeek;
 use Gdbots\Schemas\Common\Enum\Month;
 use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimeParting;
 
-class TimePartingEnricher implements EventSubscriber
+final class TimePartingEnricher implements EventSubscriber
 {
     /**
      * @param PbjxEvent $pbjxEvent

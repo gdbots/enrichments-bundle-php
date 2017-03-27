@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Gdbots\Bundle\EnrichmentsBundle;
 
@@ -8,7 +8,7 @@ use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Pbjx\EventSubscriber;
 use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSampling;
 
-class TimeSamplingEnricher implements EventSubscriber
+final class TimeSamplingEnricher implements EventSubscriber
 {
     /**
      * @param PbjxEvent $pbjxEvent

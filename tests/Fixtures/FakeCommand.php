@@ -5,16 +5,12 @@ namespace Gdbots\Tests\Bundle\EnrichmentsBundle\Fixtures;
 use Gdbots\Pbj\AbstractMessage;
 use Gdbots\Pbj\MessageResolver;
 use Gdbots\Pbj\Schema;
-use Gdbots\Pbj\Type as T;
 use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimePartingV1;
 use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimePartingV1Mixin;
-use Gdbots\Schemas\Enrichments\Mixin\TimeParting\TimePartingV1Trait;
 use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1;
 use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1Mixin;
-use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1Trait;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1Mixin;
-use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1Trait;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait;
@@ -26,9 +22,6 @@ final class FakeCommand extends AbstractMessage implements
     UaParserV1
 {
     use CommandV1Trait;
-    use TimePartingV1Trait;
-    use TimeSamplingV1Trait;
-    use UaParserV1Trait;
 
     /**
      * @return Schema

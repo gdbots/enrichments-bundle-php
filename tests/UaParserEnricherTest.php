@@ -1,11 +1,13 @@
 <?php
+declare(strict_types=1);
 
 namespace Gdbots\Tests\Bundle\EnrichmentsBundle;
 
 use Gdbots\Bundle\EnrichmentsBundle\UaParserEnricher;
 use Gdbots\Pbjx\Event\PbjxEvent;
+use PHPUnit\Framework\TestCase;
 
-class UaParserEnricherTest extends \PHPUnit_Framework_TestCase
+class UaParserEnricherTest extends TestCase
 {
     public function testEnrich()
     {

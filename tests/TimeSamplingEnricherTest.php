@@ -1,12 +1,14 @@
 <?php
+declare(strict_types=1);
 
 namespace Gdbots\Tests\Bundle\EnrichmentsBundle;
 
 use Gdbots\Bundle\EnrichmentsBundle\TimeSamplingEnricher;
 use Gdbots\Pbj\WellKnown\Microtime;
 use Gdbots\Pbjx\Event\PbjxEvent;
+use PHPUnit\Framework\TestCase;
 
-class TimeSamplingEnricherTest extends \PHPUnit_Framework_TestCase
+class TimeSamplingEnricherTest extends TestCase
 {
     public function testEnrich()
     {

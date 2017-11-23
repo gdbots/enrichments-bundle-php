@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Gdbots\Tests\Bundle\EnrichmentsBundle;
 
@@ -7,8 +8,9 @@ use Gdbots\Pbj\WellKnown\Microtime;
 use Gdbots\Pbjx\Event\PbjxEvent;
 use Gdbots\Schemas\Common\Enum\DayOfWeek;
 use Gdbots\Schemas\Common\Enum\Month;
+use PHPUnit\Framework\TestCase;
 
-class TimePartingEnricherTest extends \PHPUnit_Framework_TestCase
+class TimePartingEnricherTest extends TestCase
 {
     public function testEnrich()
     {

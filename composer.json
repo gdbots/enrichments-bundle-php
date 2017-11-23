@@ -1,18 +1,20 @@
 {
   "name": "gdbots/enrichments-bundle",
   "homepage": "https://github.com/gdbots/enrichments-bundle-php",
-  "description": "Symfony3 bundle that provides implementations for gdbots:enrichments schemas.",
+  "description": "Symfony bundle that provides implementations for gdbots:enrichments schemas.",
   "type": "library",
   "license": "Apache-2.0",
   "require": {
     "php": ">=7.1",
-    "gdbots/pbjx": "~2.0",
-    "symfony/symfony": "~3.2",
-    "ua-parser/uap-php": "~3.4"
+    "gdbots/pbjx": "^2.0",
+    "symfony/config": "^3.3 || ^4.0",
+    "symfony/dependency-injection": "^3.3 || ^4.0",
+    "symfony/http-kernel": "^3.3 || ^4.0",
+    "ua-parser/uap-php": "^3.4"
   },
   "require-dev": {
-    "composer/composer": "1.0.*@dev",
-    "phpunit/phpunit": "~4.3"
+    "composer/composer": "^1.5",
+    "phpunit/phpunit": "^6.4"
   },
   "autoload": {
     "psr-4": {
@@ -23,5 +25,8 @@
     "psr-4": {
       "Gdbots\\Tests\\Bundle\\EnrichmentsBundle\\": "tests"
     }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
   }
 }

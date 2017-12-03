@@ -4,15 +4,15 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
   <services>
-    <service id="gdbots_enrichments.time_parting_enricher" class="Gdbots\Bundle\EnrichmentsBundle\TimePartingEnricher" public="true">
+    <service id="gdbots_enrichments.time_parting_enricher" class="Gdbots\Bundle\EnrichmentsBundle\TimePartingEnricher" public="false">
       <tag name="pbjx.event_subscriber"/>
     </service>
 
-    <service id="gdbots_enrichments.time_sampling_enricher" class="Gdbots\Bundle\EnrichmentsBundle\TimeSamplingEnricher" public="true">
+    <service id="gdbots_enrichments.time_sampling_enricher" class="Gdbots\Bundle\EnrichmentsBundle\TimeSamplingEnricher" public="false">
       <tag name="pbjx.event_subscriber"/>
     </service>
 
-    <service id="gdbots_enrichments.ua_parser_enricher" class="Gdbots\Bundle\EnrichmentsBundle\UaParserEnricher" public="true">
+    <service id="gdbots_enrichments.ua_parser_enricher" class="Gdbots\Bundle\EnrichmentsBundle\UaParserEnricher" public="false">
       <argument type="service" id="logger" on-invalid="ignore"/>
       <tag name="monolog.logger" channel="gdbots.enrichments"/>
       <tag name="pbjx.event_subscriber"/>

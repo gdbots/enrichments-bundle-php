@@ -2,7 +2,7 @@
   "name": "gdbots/enrichments-bundle",
   "homepage": "https://github.com/gdbots/enrichments-bundle-php",
   "description": "Symfony bundle that provides implementations for gdbots:enrichments schemas.",
-  "type": "library",
+  "type": "symfony-bundle",
   "license": "Apache-2.0",
   "require": {
     "php": ">=7.1",
